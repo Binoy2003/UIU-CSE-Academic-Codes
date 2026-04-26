@@ -1,0 +1,100 @@
+.header {
+  height: 10vh;
+  border-bottom: 2px solid grey;
+}
+
+.flex {
+  display: flex;
+}
+
+.main-body {
+  height: 90vh;
+  background-color: lightcoral; 
+}
+
+/* LEFT SIDE */
+.left-main {
+  width: 40%;
+  background-color: #0976a7;
+}
+
+/* RIGHT SIDE */
+.right-main {
+  width: 60%;
+  background-color: #f0f0f0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.course-title {
+  font-size: x-large;
+  padding: 20px;
+  width: 30%;
+}
+
+.menu-bar {
+  width: 70%;
+  font-size: x-large;
+  text-align: right;
+}
+
+.add-space {
+  margin: 20px;
+}
+
+.trial-button {
+  margin: 20px;
+  background: #0976a7;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 20px 20px;
+  border-radius: 8px;
+  font-size: small;
+}
+.sign-in-text{
+   font-size:55px;
+   font-weight: bolder;
+}
+.hyperlink-color{
+  color:#e90606;
+}
+.icon{
+  font-size: 20px;
+  color: #e90606;
+}
+.google-button{
+  width: 100%;
+  background-color: white ;
+  border: 1px solid grey;
+  color:grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-radius: 5px ;
+  gap: 100px;
+  margin: 10px;
+}
+.enter-button{
+  width: 100%;
+  background-color: #eff1f3 ;
+  border: 1px solid rgb(51, 50, 50);
+  color:rgb(46, 46, 46);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  border-radius: 5px ;
+  gap: 100px;
+  margin: 10px;
+}
+.sign-in{
+  width: 100%;
+  background-color: #e90606;
+   border: 1px solid rgb(51, 50, 50);
+   color:rgb(247, 247, 247);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 23px;
+  border-radius: 5px ;
+  margin: 10px;
+}
