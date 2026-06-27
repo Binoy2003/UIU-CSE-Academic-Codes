@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Calorie Tracker</title>
+</head>
+<body>
+
+    <h1>Daily Calorie Tracker</h1>
+
+    <input type="number" id="calorie" placeholder="Enter Calories">
+    <button onclick="addCalories()">Add Calories</button>
+
+    <h2 id="total">Total Calories: 0</h2>
+    <h2 id="message">Feedback:</h2>
+
+    <script>
+
+        let dailyGoal = 2000;
+
+        let total = 0;
+        let count = 0;
+        function addCalories() {
+
+            let input = document.getElementById("calorie");
+            let calories = Number(input.value);
+            if (calories <= 0) {
+                alert("Please enter a valid calorie amount.");
+                return;
+            }
+
+            total += calories;
+            count++;
+            document.getElementById("total").innerHTML =
+                "Total Calories: " + total;
+            let message = "";
+
+            if (count > 10 && total < dailyGoal) {
+                message = "Be cautious of frequent snacking!";
+            }
+            else if (total <= 800) {
+                message = "You're off to a healthy start!";
+            }
+            else if (total <= 1600) {
+                message = "Good progress, keep it balanced!";
+            }
+            else if (total <= 1999) {
+                message = "Almost at your limit!";
+            }
+            else {
+                message = "Goal reached! Stay mindful!";
+            }
+            document.getElementById("message").innerHTML =
+                "Feedback: " + message;
+            input.value = "";
+        }
+
+    </script>
+
+</body>
+</html>
